@@ -46,7 +46,7 @@ class TestBooksCollector3:
 
         collector.add_new_book('Гордость и предубеждение и зомби')
     
-    assert collector.get_book_genre('Гордость и предубеждение и зомби') == 'Гордость и предубеждение и зомби'
+        assert collector.get_book_genre('Гордость и предубеждение и зомби') == 'Гордость и предубеждение и зомби'
 
 
 class TestBooksCollector4:
@@ -63,9 +63,9 @@ class TestBooksCollector4:
         collector.add_new_book('Что делать, если ваш кот хочет вас убить')
         collector.set_book_genre('Горе от ума', 'Комедии')
 
-    assert len(collector.get_books_with_specific_genre('Ужасы')) == 1
-    assert len(collector.get_books_with_specific_genre('Комедии')) == 2
-    assert len(collector.get_books_with_specific_genre('Фантастика')) == 0
+        assert len(collector.get_books_with_specific_genre('Ужасы')) == 1
+        assert len(collector.get_books_with_specific_genre('Комедии')) == 2
+        assert len(collector.get_books_with_specific_genre('Фантастика')) == 0
 
 
 class TestBooksCollector5:
@@ -89,8 +89,8 @@ class TestBooksCollector6:
         collector.add_new_book('Что делать, если ваш кот хочет вас убить')
         collector.set_book_genre('Что делать, если ваш кот хочет вас убить', 'Комедии')
 
-    assert collector.get_books_for_children in 'Что делать, если ваш кот хочет вас убить'
-    assert not collector.get_books_for_children in 'Гордость и предубеждение и зомби'
+        assert collector.get_books_for_children in 'Что делать, если ваш кот хочет вас убить'
+        assert not collector.get_books_for_children in 'Гордость и предубеждение и зомби'
 
 
 class TestBooksCollector7:
@@ -101,7 +101,7 @@ class TestBooksCollector7:
         collector.add_new_book('Гордость и предубеждение и зомби')
         collector.add_book_in_favorites('Гордость и предубеждение и зомби')
 
-    assert collector.favorites == 'Гордость и предубеждение и зомби'
+        assert collector.favorites == 'Гордость и предубеждение и зомби'
 
 
 class TestBooksCollector8:
@@ -113,7 +113,7 @@ class TestBooksCollector8:
         collector.add_book_in_favorites('Гордость и предубеждение и зомби')
         collector.delete_book_from_favorites('Гордость и предубеждение и зомби')
 
-    assert collector.favorites == ''
+        assert collector.favorites == ''
 
 
 class TestBooksCollector9:
